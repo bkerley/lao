@@ -1,0 +1,25 @@
+#!/usr/local/bin/lao
+#
+# Created by Bryce Kerley on 2006-06-29.
+# Copyright (c) 2006. All rights reserved.
+#
+# $Id: hello.lao 74 2006-07-01 21:28:40Z bkerley $
+#
+# LAO hello world
+
+-DOINK DOINK- BRISCOE
+motive is "Hello world!"               #motive = "Hello World"
+evidence is 100                        #evidence = 100
+give motive, evidence                  #return [motive, evidence]
+
+-DOINK DOINK- CRAGEN
+desk work                              #nop
+BRISCOE give me motive, evidence       #[motive, evidence] = briscoe()
+case is motive, evidence               #case = [motive, evidence]
+MCCOY here is case                     #mccoy(case)
+
+-DOINK DOINK- MCCOY
+opening arguments
+present motive                         #if motive's non-numeric puts
+present evidence                       #if evidence is numeric add to ectr
+closing arguments
